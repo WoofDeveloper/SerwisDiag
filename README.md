@@ -364,6 +364,7 @@ Zweryfikowane na rzeczywistym komputerze: Windows 11 Pro (kompilacja 26300, 26H2
 - monitor w tle na żywo: pierwsze sprawdzenie (2 znane problemy, jedno powiadomienie zbiorcze, ikona z żółtą kropką, okno wyników), drugie bez powiadomienia o tych samych problemach;
 - pełny cykl z prawdziwym instalatorem (wersja testowa obok programu, instalacja dla bieżącego użytkownika): instalacja z monitorem (autostart, monitor działa), aktualizacja z zainstalowanej kopii do wyższej wersji (pobranie, kontrola sumy i wersji, instalator w tym samym trybie, monitor uruchomiony ponownie w nowej wersji), odinstalowanie (folder, wpis w Aplikacjach i autostart usunięte, monitor zakończony);
 - okno ustawień z nowymi opcjami i baner nowej wersji (zrzuty);
-- 451 testów jednostkowych (m.in. kontrola sumy i numeru wersji pobranego instalatora, porównanie stanu monitora, zadanie Harmonogramu).
+- 451 testów jednostkowych (m.in. kontrola sumy i numeru wersji pobranego instalatora, porównanie stanu monitora, zadanie Harmonogramu);
+- po publikacji wydania v1.4.0 na GitHubie: program odczytuje najnowszą wersję, opis i pliki wydania, pobiera instalator (2,2 MB, ok. 2 s) i sprawdza jego sumę SHA-256 i numer wersji – plik jest identyczny z opublikowanym.
 
 **Wersja 1.4.0 – niesprawdzone:** instalacja dla wszystkich użytkowników z zadaniem Harmonogramu (wymaga UAC), ponowne uruchomienie programu po aktualizacji z okna (/RELAUNCH), aktualizacja z prawdziwego wydania na GitHubie do nowszej wersji (1.4.0 to pierwsze wydanie – przed publikacją sprawdzone na plikach lokalnych o tym samym formacie).
