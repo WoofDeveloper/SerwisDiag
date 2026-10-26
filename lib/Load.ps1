@@ -1,0 +1,16 @@
+﻿# SerwisDiag - ładuje silnik i wszystkie testy. Użycie: $SdRoot = '<katalog programu>'; . "$SdRoot\lib\Load.ps1"
+. (Join-Path $SdRoot 'lib\Integrity.ps1')
+. (Join-Path $SdRoot 'lib\Core.ps1')
+. (Join-Path $SdRoot 'lib\Providers.ps1')
+. (Join-Path $SdRoot 'lib\Native.ps1')
+. (Join-Path $SdRoot 'lib\Settings.ps1')
+. (Join-Path $SdRoot 'lib\AppInfo.ps1')
+. (Join-Path $SdRoot 'lib\Report.ps1')
+. (Join-Path $SdRoot 'lib\Compare.ps1')
+. (Join-Path $SdRoot 'lib\Drivers.ps1')
+. (Join-Path $SdRoot 'lib\Repair.ps1')
+. (Join-Path $SdRoot 'lib\Fixes.ps1')
+. (Join-Path $SdRoot 'lib\Backup.ps1')
+. (Join-Path $SdRoot 'lib\Update.ps1')
+. (Join-Path $SdRoot 'lib\Monitor.ps1')
+Get-ChildItem -Path (Join-Path $SdRoot 'checks') -Filter '*.ps1' | Sort-Object Name | ForEach-Object { . $_.FullName }

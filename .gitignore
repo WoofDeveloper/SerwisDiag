@@ -1,0 +1,5 @@
+# Dane komputerów (numery seryjne, klucze Windows, konta) i ustawienia serwisu - nie publikować
+raporty/
+logs/
+config/settings.json
+dist/
